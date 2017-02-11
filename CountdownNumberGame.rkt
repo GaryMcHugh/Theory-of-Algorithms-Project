@@ -7,7 +7,9 @@
 (define large (list 25 50 75 100))
 
 ;generate a target value
-(define (target) (displayln (random 100 1000)))
+;added a loop to test range
+;https://www.reddit.com/r/Racket/comments/32g9v3/how_do_you_generate_random_numbers/
+(define (target) (for ([i 9000]) (displayln (random 100 1000))))
 
 ;call target
 (target)
