@@ -3,6 +3,9 @@
 ;a list containing all possible values
 (define values (list 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 25 50 75 100))
 
+;list to hold the 6 randomly selected numbers
+(define selection(list))
+
 ;generate a target value
 ;https://www.reddit.com/r/Racket/comments/32g9v3/how_do_you_generate_random_numbers/
 (define (target) (displayln (random 101 1000)))
@@ -17,11 +20,13 @@
       ;if passed the null list passback 0
       0
       (list-ref l (random (length l)))))
+;cons this value onto the selection list
+;make it a function to recurse on it
 
 ;call pick-item
-;(pick-item values)
+(pick-item values)
 
-;nned to remove element when selected and add it to a new list (containg the 6 numbers)
+;need to remove element when selected and add it to a new list (containg the 6 numbers)
 (define select-random
   (lambda (ls)
     (let ((len (length ls)))         ;; find out how long the list is
