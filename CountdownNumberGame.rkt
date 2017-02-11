@@ -5,3 +5,9 @@
 
 ;a list of the possible large values
 (define large (list 25 50 75 100))
+
+;generate a target value
+(define (target) (displayln (random 100 1000)))
+
+;call target
+(target)
