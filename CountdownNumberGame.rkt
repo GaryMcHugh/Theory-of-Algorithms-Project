@@ -4,7 +4,7 @@
 (define values (list 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 25 50 75 100))
 
 ;list to hold the 6 randomly selected numbers
-(define selection(list))
+(define selected(list))
 
 ;generate a target value
 ;https://www.reddit.com/r/Racket/comments/32g9v3/how_do_you_generate_random_numbers/
@@ -16,12 +16,10 @@
 ;randomly select a value from the values list
 ;https://www.rosettacode.org/wiki/Pick_random_element#Racket
 (define (pick-item l)
-  (if (null? l)
-      ;if passed the null list passback 0
-      0
-      (list-ref l (random (length l)))))
-;cons this value onto the selection list
-;make it a function to recurse on it
+  ;define a function called selectValues to recurse on
+  (define selectValues(list-ref l (random (length l))))
+  ;cons the selected value onto the selected list
+  (cons selectValues selected))
 
 ;call pick-item
 (pick-item values)
@@ -32,4 +30,4 @@
     (let ((len (length ls)))         ;; find out how long the list is
       (list-ref ls (random len)))))  ;; pick one from 0 to the end
 
-(select-random (list 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 25 50 75 100))
+;(select-random (list 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 25 50 75 100))
