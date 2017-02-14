@@ -20,12 +20,21 @@
   (define selectValues(list-ref list (random (length list))))
   ;cons the selected value thats returned from the selectedValues onto the selected list
   ;http://docs.racket-lang.org/reference/set_.html
-  (set! selected(cons selectValues selected)))
+  (set! selected(cons selectValues selected))
+  ;(displayln selected)
+  ;if the length of the selected list is not 6 recurse on pick-item
+  ;http://stackoverflow.com/questions/30041672/if-else-clause-or-cond-in-racket
+  ;https://docs.racket-lang.org/reference/booleans.html
+  (if (equal? (length selected)6)
+      selected
+      (pick-item list)
+  ) ;if
+  )
 
 ;call pick-item
 (pick-item values)
 ;showing list contains a value
-(displayln selected)
+;(displayln selected)
 
 ;need to remove element when selected and add it to a new list (containg the 6 numbers)
 (define select-random
