@@ -15,14 +15,17 @@
 
 ;randomly select a value from the values list
 ;https://www.rosettacode.org/wiki/Pick_random_element#Racket
-(define (pick-item l)
+(define (pick-item list)
   ;define a function called selectValues to recurse on
-  (define selectValues(list-ref l (random (length l))))
-  ;cons the selected value onto the selected list
-  (cons selectValues selected))
+  (define selectValues(list-ref list (random (length list))))
+  ;cons the selected value thats returned from the selectedValues onto the selected list
+  ;http://docs.racket-lang.org/reference/set_.html
+  (set! selected(cons selectValues selected)))
 
 ;call pick-item
 (pick-item values)
+;showing list contains a value
+(displayln selected)
 
 ;need to remove element when selected and add it to a new list (containg the 6 numbers)
 (define select-random
