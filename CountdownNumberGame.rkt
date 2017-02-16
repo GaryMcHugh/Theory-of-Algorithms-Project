@@ -1,3 +1,6 @@
+;Author: Gary McHugh
+;Date:16th February 2017
+
 #lang racket
 
 ;a list containing all possible values
