@@ -21,25 +21,20 @@
   ;cons the selected value thats returned from the selectedValues onto the selected list
   ;http://docs.racket-lang.org/reference/set_.html
   (set! selected(cons selectValues selected))
-  ;(displayln selected)
+  ;https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28lib._racket%2Fprivate%2Flist..rkt%29._remove%29%29
+    (set! list (remove selectValues list))
+  
   ;if the length of the selected list is not 6 recurse on pick-item
   ;http://stackoverflow.com/questions/30041672/if-else-clause-or-cond-in-racket
   ;https://docs.racket-lang.org/reference/booleans.html
-  (if (equal? (length selected)6)
+  ;24 for testing purposes
+    (if (equal? (length selected)24)
       selected
       (pick-item list)
-  ) ;if
+    ) ;if
   )
 
 ;call pick-item
 (pick-item values)
 ;showing list contains a value
 ;(displayln selected)
-
-;need to remove element when selected and add it to a new list (containg the 6 numbers)
-(define select-random
-  (lambda (ls)
-    (let ((len (length ls)))         ;; find out how long the list is
-      (list-ref ls (random len)))))  ;; pick one from 0 to the end
-
-;(select-random (list 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 25 50 75 100))
