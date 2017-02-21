@@ -31,7 +31,7 @@ Follow the steps below to run this project:
 4. Press CTRL + R <kbd>ctrl</kbd> + <kbd>r</kbd> To run the code
 
 ###What is the Countdown Numbers Game
-The Countdown Numbers Game is a numerical based game that is featured on the popular television gameshow Countdown which first aired on Channel 4 in 1982. It originated from a French version of the gameshow called 'Des chiffres et des lettres' which translates to 'Numbers and Letters', It along with Countdown is one of the longest running gameshows in the world. The game contains a collection of 24 numbers, 6 of those numbers are then selected by the contestant. A target number is then generated between 101-999, The contestants have 30 seconds to get as close to the target number as possible using those six numbers. They may only use each number once and only the addition, subtraction, multiplication and division operators can be applied to the numbers. They do not have to use all numbers. For more information, checkout the [Wikipedia](https://en.wikipedia.org/wiki/Countdown_(game_show)#Numbers_round) page.
+The Countdown Numbers Game is a numerical based game that is featured on the popular television gameshow Countdown which first aired on Channel 4 in 1982. It originated from a French version of the gameshow called 'Des chiffres et des lettres' which translates to 'Numbers and Letters', it along with Countdown is one of the longest running gameshows in the world. The game contains a collection of 24 numbers, 6 of those numbers are then selected by the contestant. A target number is then generated between 101-999, The contestants have 30 seconds to get as close to the target number as possible using those six numbers. They may only use each number once and only the addition, subtraction, multiplication and division operators can be applied to the numbers. The contestants do not have to use all of the numbers. For more information, checkout the [Wikipedia](https://en.wikipedia.org/wiki/Countdown_(game_show)#Numbers_round) page.
 
 Example:
 > List of numbers: {1, 2, 3, 4, 5, 6}
@@ -51,6 +51,7 @@ Example:
 + Negative numbers and Fractions are not allowed
 + If the same number appears twice in the list of six then it may be used twice
 
+Rules adapted from [datagenetics](http://datagenetics.com/blog/august32014/index.html)
 ###Summary of Project
 
 ###How it works
