@@ -35,7 +35,9 @@ The Countdown Numbers Game is a numerical based game that is featured on the pop
 
 Example:
 > List of numbers: {1, 2, 3, 4, 5, 6}
+
 > Target Number: 110
+
 > Solution: ((3×6)+4)×5
 
 ###Rules of the game
