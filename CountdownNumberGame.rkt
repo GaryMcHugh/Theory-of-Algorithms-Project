@@ -31,7 +31,7 @@
   ;http://stackoverflow.com/questions/30041672/if-else-clause-or-cond-in-racket
   ;https://docs.racket-lang.org/reference/booleans.html
   ;24 for testing purposes
-    (if (equal? (length selected)24)
+    (if (equal? (length selected)6)
       selected
       (pick-item list)
     ) ;if
@@ -41,3 +41,18 @@
 (pick-item values)
 ;showing list contains a value
 ;(displayln selected)
+
+;-----------------------------------------
+;        Working out calculations
+;-----------------------------------------
+
+'working 'out 'calculations
+
+;(permutations (list 1 2 3 4))
+
+(combinations (list 1 2 3 4) 0)
+
+(define (plus l)
+  (+(car l)(cadr l)))
+
+(map plus (combinations (list 1 2 3 4 5) 2))
