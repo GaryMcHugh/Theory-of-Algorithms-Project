@@ -107,6 +107,9 @@ l
 
 m
 
+;-----------------------------------------------------------
+;        Using Permutations, combinations and map
+;-----------------------------------------------------------
 'seperate
 
 (permutations (list 1 2 3 4))
@@ -117,3 +120,28 @@ m
   (+(car l)(cadr l)))
 
 (map plus (combinations (list 1 2 3 4) 2))
+
+
+;-----------------------------------------
+;        Reverse Polish Notation
+;-----------------------------------------
+
+;https://rosettacode.org/wiki/Parsing/RPN_calculator_algorithm#Racket
+'rpn
+
+(define (calculate-RPN expr)
+  (for/fold ([stack '()]) ([token expr])
+    (printf "~a\t -> ~a~N" token stack)
+    (match* (token stack)
+     [((? number? n) s) (cons n s)]
+     [('+ (list x y s ___)) (cons (+ x y) s)]
+     [('- (list x y s ___)) (cons (- y x) s)]
+     [('* (list x y s ___)) (cons (* x y) s)]
+     [('/ (list x y s ___)) (cons (/ y x) s)]
+     [('^ (list x y s ___)) (cons (expt y x) s)]
+     [(x s) (error "calculate-RPN: Cannot calculate the expression:" 
+                   (reverse (cons x s)))])))
+
+(calculate-RPN '(4 13 5 / +))
+
+(calculate-RPN '(2 1 + 3 *))
