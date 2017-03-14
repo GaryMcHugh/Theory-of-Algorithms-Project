@@ -9,6 +9,8 @@
 ;list to hold the 6 randomly selected numbers
 (define selected(list))
 
+(define selecting(list 1 2 3))
+
 ;list of operators that will be used
 (define operators '(* / + -))
 
@@ -44,6 +46,7 @@
 (pick-item values)
 ;showing list contains a value
 ;(displayln selected)
+(permutations selected)
 
 ;-----------------------------------------
 ;        Working out calculations
@@ -112,7 +115,7 @@ m
 ;-----------------------------------------------------------
 'seperate
 
-(permutations (list 1 2 3 4))
+(permutations (list 1 2 3 4 1))
 
 (combinations (list 1 2 3 4) 2)
 
