@@ -9,7 +9,7 @@ ___
 
 # Introduction	
 
-###Technologies Used:
+### Technologies Used:
 
 + **Operating System:** Windows 10
 + **IDE:** DrRacket
@@ -52,6 +52,6 @@ Example:
 + If the same number appears twice in the list of six then it may be used twice
 
 Rules adapted from [datagenetics](http://datagenetics.com/blog/august32014/index.html)
-###Summary of Project
+### Summary of Project
 
 ### How it works
