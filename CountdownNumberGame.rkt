@@ -53,6 +53,7 @@
 ;-----------------------------------------
 'working 'out 'calculations
 
+;working out solution using 2 numbers
 (define t 125)
 (define a 5)
 (define b  25)
@@ -69,6 +70,7 @@
 ))
 l
 
+;moving onto understanding adding a number
 (define x 10)
 (define y 5)
 (define z 2)
