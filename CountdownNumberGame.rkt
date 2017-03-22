@@ -48,6 +48,28 @@
 ;(displayln selected)
 (permutations selected)
 
+(combinations selected)
+
+;define a function called subsetsum to take a list
+(define (addAll l)
+   ;map the + operator to the combinations of the list without brackets, i.e. evaluate the function
+   (map
+    (lambda (i) (apply + i))
+   (combinations l)))
+
+;adds all permutations of the numbers together
+(addAll selected)
+
+;define a function called subsetsum to take a list
+(define (multAll l)
+   ;map the * operator to the combinations of the list without brackets, i.e. evaluate the function
+   (map
+    (lambda (i) (apply * i))
+   (combinations l)))
+
+;adds all permutations of the numbers together
+(multAll selected)
+
 ;-----------------------------------------
 ;        Working out calculations
 ;-----------------------------------------
@@ -117,9 +139,9 @@ m
 ;-----------------------------------------------------------
 'seperate
 
-(permutations (list 1 2 3 4 1))
+;(permutations (list 1 2 3 4 1))
 
-(combinations (list 1 2 3 4) 2)
+;(combinations (list 1 2 3 4) 2)
 
 (define (plus l)
   (+(car l)(cadr l)))
