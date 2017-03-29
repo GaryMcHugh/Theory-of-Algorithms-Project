@@ -148,6 +148,9 @@ m
 
 (map plus (combinations (list 1 2 3 4) 2))
 
+;get all combinations of 5 operators
+;five as we will need five when using reverse polish notation to solve six numbers
+(cartesian-product operators operators operators operators operators)
 
 ;-----------------------------------------
 ;        Reverse Polish Notation

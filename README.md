@@ -53,7 +53,7 @@ Example:
 
 Rules adapted from [datagenetics](http://datagenetics.com/blog/august32014/index.html)
 ### Summary of Project
-The project should contain a solution that contains a function that will take two arguements. First, a target number between 101 and 999 and second, a list of six numbers that have been randomly selected from the set of numbers. The function should return a way of calculating the target number using the six selected numbers by applying the operators *, +, - / .The target number should be randomly generated in the program so that it is different each time. The six numbers should be randomly selected from the list of all possible values. It should not contain the same number twice i.e. he number 25 may not be selected twice as it only appears once in the list. As stated in the rules the solution may not use fractions in its calculation and it may not use negative numbers in its solution.
+The project should contain a solution that contains a function that will take two arguments. First, a target number between 101 and 999 and second, a list of six numbers that have been randomly selected from the set of numbers. The function should return a way of calculating the target number using the six selected numbers by applying the operators *, +, - / . The target number should be randomly generated in the program so that it is different each time. The six numbers should be randomly selected from the list of all possible values. It should not contain the same number twice i.e. he number 25 may not be selected twice as it only appears once in the list. As stated in the rules the solution may not use fractions in its calculation and it may not use negative numbers in its solution.
 
 ### Quantifying the problem
 #### Selecting the list of 6 numbers
@@ -96,7 +96,7 @@ According to [crosswordtools](www.crosswordtools.com/numbers-game/faq.php) there
 
 #### Combining that with target number
 Therefore, given the integers 100 to 999 as target numbers, there are 13243 * 900 = 11,918,700 different puzzles to solve.
-If 100 is excluded as it is in our solution there are 11,905,457 different puzzles to solve.
+If 100 is excluded as it is in our solution, there are 11,905,457 different puzzles to solve.
 Source: [Countdown Numbers report](http://ccg.doc.gold.ac.uk/papers/colton_aisb14a.pdf)
 #### The number of equations
 It's the sum of the number of equations for each number of tiles k, where k is the number of numbers used in the equation. If there are no duplicate tiles, then this is straight forward. Using the formula found on [code project](https://www.codeproject.com/Articles/740035/Countdown-Number-Puzzle-Solver)
