@@ -56,7 +56,7 @@ Rules adapted from [datagenetics](http://datagenetics.com/blog/august32014/index
 The project should contain a solution that contains a function that will take two arguements. First, a target number between 101 and 999 and second, a list of six numbers that have been randomly selected from the set of numbers. The function should return a way of calculating the target number using the six selected numbers by applying the operators *, +, - / .The target number should be randomly generated in the program so that it is different each time. The six numbers should be randomly selected from the list of all possible values. It should not contain the same number twice i.e. he number 25 may not be selected twice as it only appears once in the list. As stated in the rules the solution may not use fractions in its calculation and it may not use negative numbers in its solution.
 
 ### Quantifying the problem
-####Selecting the list of 6 numbers
+#### Selecting the list of 6 numbers
 According to [crosswordtools](www.crosswordtools.com/numbers-game/faq.php) there are 13243 different possible ways of representing an ordered list of six numbers. The calculation which they have used is shown below:
 
 > 3 duplicate numbers:
@@ -64,37 +64,51 @@ According to [crosswordtools](www.crosswordtools.com/numbers-game/faq.php) there
 
 > 2 duplicate numbers:
 > aabbcA : 10C34C13C2 = 120x4x3 = 1440 possibilities
+
 > aabbcd : 10C44C2 = 210x6 = 1260 possibilities
+
 > aabbAB : 10C24C2 = 45x6 = 270 possibilities
 
 > 1 duplicate number:
 > aabcde : 10C55C1 = 252x5 = 1260 possibilities
+
 > aabcdA : 10C44C14C1 = 210x4x4 = 3360 possibilities
+
 > aabcAB : 10C34C23C1 = 120x6x3 = 2160 possibilities
+
 > aabABC : 10C24C32C1 = 45x4x2 = 360 possibilities
+
 > aaABCD : 10C1 = 10 possibilities
 
 > All numbers different:
 > abcdef : 10C6 = 210 possibilities
+
 > abcdeA : 10C54C1 = 252x4 = 1008 possibilities
+
 > abcdAB : 10C44C2 = 210x6 = 1260 possibilities
+
 > abcABC : 10C34C3 = 120x4 = 480 possibilities
+
 > abABCD : 10C2 = 45 possibilities
 
 
 > 120+1440+1260+270+1260+3360+2160+360+10+210+1008+1260+480+45=13243 possible combinations.
 
-####Combining that with target number
+#### Combining that with target number
 Therefore, given the integers 100 to 999 as target numbers, there are 13243 * 900 = 11,918,700 different puzzles to solve.
 If 100 is excluded as it is in our solution there are 11,905,457 different puzzles to solve.
 Source: [Countdown Numbers report](http://ccg.doc.gold.ac.uk/papers/colton_aisb14a.pdf)
-####The number of equations
+#### The number of equations
 It's the sum of the number of equations for each number of tiles k, where k is the number of numbers used in the equation. If there are no duplicate tiles, then this is straight forward. Using the formula found on [code project](https://www.codeproject.com/Articles/740035/Countdown-Number-Puzzle-Solver)
 
 > k = 2 n = 15*2*1*4 = 120
+
 > k = 3 n = 20*6*2*16 = 3840
+
 > k = 4 n = 15*24*5*64 = 115,200
+
 > k = 5 n = 6*120*14*256 = 2,580,480
+
 > k = 6 n = 1*720*42*1024 = 30,965,760
 
 >120 + 3840 + 115200 + 2580480 + 30965760 = 33,665,400 
