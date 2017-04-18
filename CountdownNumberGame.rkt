@@ -19,6 +19,7 @@
 (define (target) (displayln (random 101 1000)))
 
 ;call target
+'target-value
 (target)
 
 ;randomly select a value from the values list
@@ -43,11 +44,12 @@
   )
 
 ;call pick-item
+'list-of-6-numbers
 (pick-item values)
 ;showing list contains a value
 ;(displayln selected)
-(permutations selected)
 
+'combinations-of-6-numbers
 (combinations selected)
 
 ;define a function called subsetsum to take a list
@@ -58,6 +60,7 @@
    (combinations l)))
 
 ;adds all permutations of the numbers together
+'adding-all-combinations
 (addAll selected)
 
 ;define a function called subsetsum to take a list
@@ -68,12 +71,21 @@
    (combinations l)))
 
 ;adds all permutations of the numbers together
+'multiplying-all-combinations
 (multAll selected)
+
+;get all combinations of 5 operators
+;five as we will need five when using reverse polish notation to solve six numbers
+'cartesian-product-of-operators
+(cartesian-product operators operators operators operators operators)
+
+'permutations-of-6-numbers
+(permutations selected)
 
 ;-----------------------------------------
 ;        Working out calculations
 ;-----------------------------------------
-'working 'out 'calculations
+'rough-work
 
 ;working out solution using 2 numbers
 (define t 125)
@@ -132,12 +144,10 @@ l
           (*(* y x) z)
 ))
 
-m
 
 ;-----------------------------------------------------------
 ;        Using Permutations, combinations and map
 ;-----------------------------------------------------------
-'seperate
 
 ;(permutations (list 1 2 3 4 1))
 
@@ -148,16 +158,12 @@ m
 
 (map plus (combinations (list 1 2 3 4) 2))
 
-;get all combinations of 5 operators
-;five as we will need five when using reverse polish notation to solve six numbers
-(cartesian-product operators operators operators operators operators)
-
 ;-----------------------------------------
 ;        Reverse Polish Notation
 ;-----------------------------------------
 
 ;https://rosettacode.org/wiki/Parsing/RPN_calculator_algorithm#Racket
-'rpn
+'rpn-solver
 
 (define (calculate-RPN expr)
   (for/fold ([stack '()]) ([token expr])
