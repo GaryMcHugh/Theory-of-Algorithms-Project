@@ -27,7 +27,7 @@ Follow the steps below to run this project:
 	```
 	git clone https://github.com/GaryMcHugh/Theory-of-Algorithms-Project.git
 	```
-3. Open this project within DrRacket
+3. Open the [CountdownNumberGame.rkt] (https://github.com/GaryMcHugh/Theory-of-Algorithms-Project/blob/master/CountdownNumberGame.rkt) script within DrRacket
 4. Press CTRL + R <kbd>ctrl</kbd> + <kbd>r</kbd> To run the code
 
 ### What is the Countdown Numbers Game
