@@ -159,6 +159,19 @@ l
 (map plus (combinations (list 1 2 3 4) 2))
 
 ;-----------------------------------------
+;        Merging two lists together
+;-----------------------------------------
+(define ops '(* / + - *))
+
+; http://stackoverflow.com/questions/12646888/scheme-merge-two-lists-into-one
+(define (merge l1 l2)
+      (if (null? l1) l2
+          (if (null? l2) l1
+              (cons (car l1) (cons (car l2) (merge (cdr l1) (cdr l2)))))))
+'merge
+(merge selected ops)
+
+;-----------------------------------------
 ;        Reverse Polish Notation
 ;-----------------------------------------
 
