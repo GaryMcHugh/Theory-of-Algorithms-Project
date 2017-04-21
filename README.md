@@ -23,11 +23,11 @@ ___
 Follow the steps below to run this project:
 
 1. Download [DrRacket](https://download.racket-lang.org/) for your desired operation system and run the installer.
-2. Download a zip file of this project and unzip it or download [Git] (https://git-scm.com/downloads) and execute the following command in the Git Bash Console
+2. Download a zip file of this project and unzip it or download [Git](https://git-scm.com/downloads) and execute the following command in the Git Bash Console
 	```
 	git clone https://github.com/GaryMcHugh/Theory-of-Algorithms-Project.git
 	```
-3. Open the [CountdownNumberGame.rkt] (https://github.com/GaryMcHugh/Theory-of-Algorithms-Project/blob/master/CountdownNumberGame.rkt) script within DrRacket
+3. Open the [CountdownNumberGame.rkt](https://github.com/GaryMcHugh/Theory-of-Algorithms-Project/blob/master/CountdownNumberGame.rkt) script within DrRacket
 4. Press CTRL + R <kbd>ctrl</kbd> + <kbd>r</kbd> To run the code
 
 ### What is the Countdown Numbers Game
