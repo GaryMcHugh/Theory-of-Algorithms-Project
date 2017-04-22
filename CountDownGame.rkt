@@ -55,4 +55,6 @@
   (if (null? l) ; checks if list is empty, if so end the function
       0
       ;use the calculate rpn function to evaluate the list
-      ((writeln (calculate-RPN (car (car l)))) (sum (cdr l)))))
+      (if (valid-rpn? (car (car l)))
+          ((writeln (calculate-RPN (car(car l)))) (sum (cdr l)))
+          (sum (cdr l)))))
