@@ -56,6 +56,6 @@
       0
       ;use the calculate rpn function to evaluate the list
       (if (valid-rpn? (car (car l)))
-          ((write (car (car l))) (writeln (calculate-RPN (car(car l))))  (sum (cdr l)) )
+          ((write (car (car l))) (writeln (calculate-RPN (car(car l))))(sum (cdr l)) )
           (sum (cdr l)))))
  
