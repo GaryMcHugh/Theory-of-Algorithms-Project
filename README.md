@@ -6,6 +6,7 @@
 **Lecturer:** Dr Ian McLoughlin <br />
 
 ___
+**Look at the [GitHub Wiki](https://github.com/GaryMcHugh/Theory-of-Algorithms-Project/wiki) for extensive documentation of this project.**
 
 # Introduction	
 
@@ -15,7 +16,7 @@ ___
 + **IDE:** DrRacket
 + **Programming Language:** Racket
 + **Hosting Site:** GitHub
-+ **Documentation:** ReadMe.md and GitHub Wiki
++ **Documentation:** ReadMe.md and [GitHub Wiki](https://github.com/GaryMcHugh/Theory-of-Algorithms-Project/wiki)
 + **Additional:** GitHub Issues, ZenHub Boards (Kanban board)
 
 
@@ -29,6 +30,18 @@ Follow the steps below to run this project:
 	```
 3. Open the [CountdownNumberGame.rkt](https://github.com/GaryMcHugh/Theory-of-Algorithms-Project/blob/master/CountdownNumberGame.rkt) script within DrRacket
 4. Press CTRL + R <kbd>ctrl</kbd> + <kbd>r</kbd> To run the code
+
+### CountdownNumberGame.rkt functionality (the main script)
++ **Target Value:** Generates a target number between 101-999
++ **Six Numbers:** Randomly selects six numbers from the allowed values list without duplicates
++ **Combinations:** Gets the combinations of those six numbers
++ **Addition:** Adds the combinations of the six numbers together
++ **Multiplication:** Multiplies the combinations of the six numbers together
++ **Operators:** Gets all combinations of five operators usig the cartesian-product function
++ **Permutations:** Gets the permuattions of the six numbers
++ **RPN creater:** Creates all valid reverse polish notation using 1's and -1's
++ **RPN solver:** Contains a function to solve reverse polish notation
++ **Stack:** Contains the completed stack implementation from class
 
 ### What is the Countdown Numbers Game
 The Countdown Numbers Game is a numerical based game that is featured on the popular television gameshow Countdown which first aired on Channel 4 in 1982. It originated from a French version of the gameshow called 'Des chiffres et des lettres' which translates to 'Numbers and Letters', it along with Countdown is one of the longest running gameshows in the world. The game contains a collection of 24 numbers, 6 of those numbers are then selected by the contestant. A target number is then generated between 101-999, The contestants have 30 seconds to get as close to the target number as possible using those six numbers. They may only use each number once and only the addition, subtraction, multiplication and division operators can be applied to the numbers. The contestants do not have to use all of the numbers. For more information, checkout the [Wikipedia](https://en.wikipedia.org/wiki/Countdown_(game_show)#Numbers_round) page.
