@@ -26,21 +26,23 @@
 ;            stack from class
 ;-----------------------------------------
 
-; e is the gernerated permutation
+; e is the gernerated permutation (the equation being passed)
 ; s is the stack
 
-;optional arguement to the func with default value of 0
+;optional argument to the function with default value of 0
 (define (valid-rpn? e [s 0])
   ;check if e is null 
   (if(null? e)
      ;check if the stack is equal to one
      (if (= s 1) #t #f)
-      ;if the first thing on e is 1
+      ;if the next thing on the expression is 1 (a number) its valid rpn so proceed.
      (if(= (car e) 1)
+        ;pass the rest of e to valid rpn and add 1 to the stack
          (valid-rpn? (cdr e)(+ 1 s))
-         ; if the stack is greater than one
+         ; must be an operator if it hits this if statement as its not a 1 (a number)
+         ; if the stack is greater than one (if we can apply the operator to the stack)
          (if(> s 1)
-            ;take one from stack
+            ;pass the rest of e to the stack and decrease the stack by one
            (valid-rpn? (cdr e) (- 1 s))
            ;print out false if stack is less than one
            #f)
