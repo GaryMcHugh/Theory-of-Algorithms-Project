@@ -47,3 +47,12 @@
            ;print out false if stack is less than one
            #f)
          )))
+
+;function to sum list using RPN function
+; function called sum that takes in a list l
+(define (sum l)
+  ;check if l is null
+  (if (null? l) ; checks if list is empty, if so end the function
+      0
+      ;use the calculate rpn function to evaluate the list
+      ((writeln (calculate-RPN (car (car l)))) (sum (cdr l)))))
