@@ -29,6 +29,8 @@
      (if(= (car e) 1)
          ;if the first thing on e is 1
          (valid-rpn? (cdr e)(+ 1 s))
-         ;fill this part in
+         (if(> s 1)
+           (valid-rpn? (cdr e) (- 1 s))
+           #f)
          )))
      
