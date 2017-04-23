@@ -37,9 +37,9 @@ Follow the steps below to run this project:
 + **Combinations:** Gets the combinations of those six numbers
 + **Addition:** Adds the combinations of the six numbers together
 + **Multiplication:** Multiplies the combinations of the six numbers together
-+ **Operators:** Gets all combinations of five operators usig the cartesian-product function
-+ **Permutations:** Gets the permuattions of the six numbers
-+ **RPN creater:** Creates all valid reverse polish notation using 1's and -1's
++ **Operators:** Gets all combinations of five operators using the cartesian-product function
++ **Permutations:** Gets the permutations of the six numbers
++ **RPN creator:** Creates all valid reverse polish notation using 1's and -1's
 + **RPN solver:** Contains a function to solve reverse polish notation
 + **Stack:** Contains the completed stack implementation from class
 
@@ -66,7 +66,7 @@ Example:
 
 Rules adapted from [datagenetics](http://datagenetics.com/blog/august32014/index.html)
 ### Summary of Project
-The project should contain a solution that contains a function that will take two arguments. First, a target number between 101 and 999 and second, a list of six numbers that have been randomly selected from the set of numbers. The function should return a way of calculating the target number using the six selected numbers by applying the operators *, +, - / . The target number should be randomly generated in the program so that it is different each time. The six numbers should be randomly selected from the list of all possible values. It should not contain the same number twice i.e. he number 25 may not be selected twice as it only appears once in the list. As stated in the rules the solution may not use fractions in its calculation and it may not use negative numbers in its solution.
+This project should contain a solution that contains a function that will take two arguments. First, a target number between 101 and 999 and second, a list of six numbers that have been randomly selected from the set of numbers. The function should return a way of calculating the target number using the six selected numbers by applying the operators *, +, - / . The target number should be randomly generated in the program so that it is different each time. The six numbers should be randomly selected from the list of all possible values. It should not contain the same number twice i.e. he number 25 may not be selected twice as it only appears once in the list. As stated in the rules the solution may not use fractions in its calculation and it may not use negative numbers in its solution.
 
 ### Quantifying the problem
 #### Selecting the list of 6 numbers
