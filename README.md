@@ -70,7 +70,7 @@ This project should contain a solution that contains a function that will take t
 
 ### Quantifying the problem
 #### Selecting the list of 6 numbers
-According to [crosswordtools](https://www.codeproject.com/Articles/740035/Countdown-Number-Puzzle-Solver) there are 13243 different possible ways of representing an ordered list of six numbers. The calculation which they have used is shown below:
+According to [crosswordtools](http://www.crosswordtools.com/numbers-game/faq.php) there are 13243 different possible ways of representing an ordered list of six numbers. The calculation which they have used is shown below:
 
 > 3 duplicate numbers:
 > aabbcc : 10C3 = 120 possibilities 
