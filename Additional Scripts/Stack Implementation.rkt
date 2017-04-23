@@ -1,5 +1,9 @@
 #lang racket
 
+;-----------------------------------------
+;        Second Stack Implmentation
+;-----------------------------------------
+
 ;http://stackoverflow.com/questions/29244677/implementation-of-lifo-list-in-scheme
 (define (make-stack)
   ;let the stack be empty

@@ -1,6 +1,9 @@
 ;Code from class
 
 #lang racket
+;-----------------------------------------
+;     Combinations of numbers and ops
+;-----------------------------------------
 
 ;get all permutations of the nummbers
 (define all-nos(permutations(list 100 50 25 10 1 1)))

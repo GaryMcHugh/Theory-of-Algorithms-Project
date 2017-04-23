@@ -1,5 +1,7 @@
 #lang racket
 
+;final attempt at problem.... didn't work
+
 (define operators '(* / + -))
 
 ;-----------------------------------------
@@ -47,6 +49,10 @@
            ;print out false if stack is less than one
            #f)
          )))
+
+;-----------------------------------------
+;     Using valid rpn and rpn solver
+;-----------------------------------------
 
 ;function to sum list using RPN function
 ; function called sum that takes in a list l
