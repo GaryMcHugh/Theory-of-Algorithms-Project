@@ -127,4 +127,10 @@ It's the sum of the number of equations for each number of tiles k, where k is t
 >120 + 3840 + 115200 + 2580480 + 30965760 = 33,665,400 
 
 This means that there are roughly 34 million equations to be evaluated for each game.
-### How it works
+### Outstanding issues
++ sub in the permutations of the numbers for 1's
++ sub in the cartesian product of operators for -1's
++ pass this equation to the RPN solver
++ check if the answer is equal to the target number
+
+Having created all the valid rpn equattions using 1's and -1's, I simply need to replace the 1's with a permutation of the six numbers and the -1's with the a cartesian product of the operators. I then neeed to pass this equation to the rpn solver. This equation would then be evaluated. I would then check the answer against the target number and output the equation if the answer equalled the target number.
